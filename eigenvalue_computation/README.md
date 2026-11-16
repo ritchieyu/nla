@@ -38,11 +38,11 @@ Define
 $$Q_k\coloneqq\Big(q_1, q_2,\dots,q_k\Big)$$
 
 Using $Q_k$, let $x\in K_k(A,q_1)$ and express $x=Q_ky$.
-In general, $x$ may not remain in the Krylov subspace, but we can **project** it back:
+In general, $Ax$ may not remain in the Krylov subspace, but we can **project** it back:
 $$K_k(A,q_1)\ni (QQ_k^T)Ax=Q(Q_k^TAQ_k)x$$
 We define
 $$H_k\coloneqq Q_k^TAQ_k$$
-What does $H_k$ represent? Since $(QQ_k)^TAx=Q_kH_kx$, then $H_k$ represents the **projected action** of $A$, written in coordinates of $Q_k$.
+What does $H_k$ represent? Since $(QQ_k)^TAQ_kx=Q_kH_ky$, then $H_k$ represents the **projected action** of $A$, written in coordinates of $Q_k$.
 
 
 ## Arnoldi Iteration
